@@ -22,8 +22,7 @@ The authors propose a template projection approach to decode the continuous ECoG
 The code for their work can be found here https://github.com/Ivy-zhouhq/BCI/tree/master/challenge/decoding-brain-challenge-2016-master
 Run the function call_fhpred_master.m that is inside the folder called fhpred to obtain the template projection used in this work.
 
-After you run call_fhpred_master.m you should find subjectID_erp_cross_folds in each of the folder name after the subjects, "ca", "ja", etc.
-
+After you run '''call_fhpred_master.m you should find'''  "subjectID_"erp_cross_folds files in each of the folder name after the subjects, "ca", "ja", etc.
 
 ## Creating Images for input of the CNNs
 

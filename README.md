@@ -14,9 +14,6 @@ We use the data collected by authors in
 The authors propose a template projection approach to decode the continuous ECoG data stream spontaneously, predicting the occurrence, timing and type of visual stimulus. In this work, we use the template projection of the ERPs data that they develop to create images representing the type of visual stimulus to be classify by our CNNs.
 
 
-
-> quote insert original work here
-
 ## Description
 
 The code for their work can be found here https://github.com/Ivy-zhouhq/BCI/tree/master/challenge/decoding-brain-challenge-2016-master
@@ -40,6 +37,8 @@ Create this images using ```create_images2.m```. There are images already create
 For designing and training the CNNs we use the MatLab deepNetworkDesigner toolbox. The CNNs used for this project are in ```projectNetLayers_fin.mat```. These CNNs can be load into deepNetworkDesigner. Upload the data (images) selecting a 30% for validation and train the network selecting the parameters in the TrainingOptions window such that you obtain the desire validation accuracy.
 
 <img src="https://user-images.githubusercontent.com/92049169/167004233-3c117e4b-bbb3-4715-9b17-8fd45f985bc8.png" width="600">
+
+Once your CNN is trained you can use ```testing.m``` to test it with a testing dataset and find the accuracy.
 
 
 

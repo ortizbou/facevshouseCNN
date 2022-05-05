@@ -30,15 +30,16 @@ We use two different methods for creating the images for the CNNs.
 
 ### Method 1: 
 Do a tensor matrix product between the projected ERP of the houses and projected ERP of the faces ate each known time interval where a stimulus occurs, and where non-stimulus occurs (class 0).
-
-Use ```create images Evan``` to create this images.
+Use ```save_tensor_images.m``` to create these images. There are images already created for each of the subjects in ```images/method1```.
 
 ### Method 2:
 Use Nt x Nc matrices where Nt is the number of samples of the template signal on intervals where a stimulus occurs and Nc is the number of channels.
-
-Create this images using ```create_data.m```
-
+Create this images using ```create_images2.m```. There are images already created for each of the subjects in ```images/method2```.
 
 ## Training the CNNs
+For designing and training the CNNs we use the MatLab deepNetworkDesigner toolbox. The CNNs used for this project are in ```projectNetLayers_fin.mat```. These CNNs can be load into deepNetworkDesigner. Upload the data (images) selecting a 30% for validation and train the network selecting the parameters in the TrainingOptions window such that you obtain the desire validation accuracy.
+
+![image](https://user-images.githubusercontent.com/92049169/167004233-3c117e4b-bbb3-4715-9b17-8fd45f985bc8.png)
+
 
 

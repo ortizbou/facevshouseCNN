@@ -29,14 +29,15 @@ We use two different methods for creating the images for the CNNs.
 Do a tensor matrix product between the projected ERP of the houses and projected ERP of the faces ate each known time interval where a stimulus occurs, and where non-stimulus occurs (class 0).
 Use ```save_tensor_images.m``` to create these images. There are images already created for each of the subjects in ```images/method1```.
 
-<img src="https://user-images.githubusercontent.com/92049169/167005585-42210cdf-d5c6-40a6-a14b-59365c00b478.png" width="400">
+<img src="https://user-images.githubusercontent.com/92049169/167005943-a598255a-e0b5-4bf0-bb7f-b8c888f4d85a.png" width="400">
+
 
 
 ### Method 2:
 Use Nt x Nc matrices where Nt is the number of samples of the template signal on intervals where a stimulus occurs and Nc is the number of channels.
 Create this images using ```create_images2.m```. There are images already created for each of the subjects in ```images/method2```.
 
-<img src="https://user-images.githubusercontent.com/92049169/167005723-5d38a906-93e4-4da5-afc4-d165478593b8.png" width="400">
+<img src="https://user-images.githubusercontent.com/92049169/167005723-5d38a906-93e4-4da5-afc4-d165478593b8.png" width="300">
 
 
 ## Training the CNNs

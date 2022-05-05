@@ -22,11 +22,21 @@ The authors propose a template projection approach to decode the continuous ECoG
 The code for their work can be found here https://github.com/Ivy-zhouhq/BCI/tree/master/challenge/decoding-brain-challenge-2016-master
 Run the function call_fhpred_master.m that is inside the folder called fhpred to obtain the template projection used in this work.
 
-After you run ```call_fhpred_master.m you should find```  "subjectID_"erp_cross_folds files in each of the folder name after the subjects, "ca", "ja", etc.
+After you run ```call_fhpred_master.m``` you should find  "subjectID_"erp_cross_folds files in each of the folder name after the subjects, "ca", "ja", etc.
 
 ## Creating Images for input of the CNNs
 
-After
+We use two different methods for creating the images for the CNNs.
+
+### Method 1: 
+Do a tensor matrix product between the projected ERP of the houses and projected ERP of the faces ate each known time interval where a stimulus occurs, and where non-stimulus occurs (class 0).
+
+Use ```create images Evan``` to create this images.
+
+### Method 2:
+Use Nt x Nc matrices where Nt is the number of samples of the template signal on intervals where a stimulus occurs and Nc is the number of channels.
+
+Create this images using ```create_data.m```
 
 
 ## Training the CNNs

@@ -39,7 +39,7 @@ Create this images using ```create_images2.m```. There are images already create
 ## Training the CNNs
 For designing and training the CNNs we use the MatLab deepNetworkDesigner toolbox. The CNNs used for this project are in ```projectNetLayers_fin.mat```. These CNNs can be load into deepNetworkDesigner. Upload the data (images) selecting a 30% for validation and train the network selecting the parameters in the TrainingOptions window such that you obtain the desire validation accuracy.
 
-![image](https://user-images.githubusercontent.com/92049169/167004233-3c117e4b-bbb3-4715-9b17-8fd45f985bc8.png)
+![image](https://user-images.githubusercontent.com/92049169/167004233-3c117e4b-bbb3-4715-9b17-8fd45f985bc8.png| width=100))
 
 
 
